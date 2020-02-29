@@ -20,4 +20,4 @@ def get_data_for_date(date):
 
 
 # from data_dates import get_data_for_date
-# get_data_for_date['12/31/2015']
+# get_data_for_date('12/31/2015')
