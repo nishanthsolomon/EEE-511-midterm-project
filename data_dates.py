@@ -16,3 +16,8 @@ date = '12/31/2015'
 
 def get_data_for_date(date):
     return data.iloc[dict_dates[date]]
+
+
+
+# from data_dates import get_data_for_date
+# get_data_for_date['12/31/2015']
