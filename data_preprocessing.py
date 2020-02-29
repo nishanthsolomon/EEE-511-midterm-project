@@ -29,4 +29,4 @@ valid = pd.concat([y_valid, x_valid], axis=1, sort=False)
 
 train.to_csv(os.path.splitext("./dataset/train")[0]+ '.csv',index=False,sep=",")
 test.to_csv(os.path.splitext("./dataset/test")[0]+ '.csv',index=False,sep=",")
-valid.to_csv(os.path.splitext("./dataset/train")[0]+ '.csv',index=False,sep=",")
+valid.to_csv(os.path.splitext("./dataset/valid")[0]+ '.csv',index=False,sep=",")
