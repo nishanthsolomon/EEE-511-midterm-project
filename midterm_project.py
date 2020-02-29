@@ -59,7 +59,7 @@ class Midterm():
         return rmse
 
     def rmse(self, y, y_predicted):
-        # self.plot_results(y_predicted)
+        self.plot_results(y_predicted)
         rms = sqrt(mean_squared_error(y, y_predicted))
         return rms
 
@@ -70,12 +70,8 @@ class Midterm():
 
         fig = plt.figure(1)
         ax = fig.add_subplot(111, projection='3d')
-        ax.scatter(X[:, 0], X[:, 1], Y)
-        ax.scatter(X[:, 0], X[:, 1], Y, color='r', label='Actual Happiness Score')
-        ax.scatter(X[:, 0], X[:, 1], Y_predicted, color='g', label='Predicted Happiness Score')
-        ax.set_xlabel('GDP')
-        ax.set_ylabel('Life Expectancy')
-        ax.set_zlabel('Happiness score')
+        ax.scatter(X[:, 0], X[:, 1], Y, color='r', label='Actual Success Rate')
+        ax.scatter(X[:, 0], X[:, 1], Y_predicted, color='g', label='Predicted Success Rate')
         ax.legend()
         plt.show()
 
