@@ -1,7 +1,7 @@
 from sklearn.neural_network import MLPRegressor
 
 
-class MLPHappinessScore():
+class MLPMidtermProject():
     def __init__(self, config):
         hidden_layer_size = int(config['hidden_layer_size'])
         activation = config['activation']
