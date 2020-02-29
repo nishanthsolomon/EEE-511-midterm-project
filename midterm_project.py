@@ -9,7 +9,7 @@ from math import sqrt
 from mpl_toolkits.mplot3d import Axes3D
 
 from mlp import MLPHappinessScore
-
+from sklearn.linear_model import LinearRegression
 
 class Midterm():
     def __init__(self, config):
