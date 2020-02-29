@@ -1,0 +1,10 @@
+hidden_layer_size,activation,solver,alpha,batch_size,learning_rate,learning_rate_init,max_iter,shuffle,early_stopping,validation_fraction,n_iter_no_change,rmse
+100_100,relu,lbfgs,0.0001,10,adaptive,0.001,1000,True,True,0.1,10.0,0.34795806519197536
+100_100,relu,lbfgs,0.0001,10,adaptive,0.001,1000,True,True,0.1,10.0,0.35263853247883653
+100_100,relu,lbfgs,0.0001,10,adaptive,0.001,1000,True,True,0.1,10.0,0.41197035332450144
+100_100,relu,lbfgs,0.0001,10,adaptive,0.001,1000,True,True,0.1,10.0,0.4556165355482831
+100_100,relu,lbfgs,0.0001,10,adaptive,0.001,1000,False,False,0.1,10.0,0.37857322289303647
+100_100,relu,lbfgs,0.0001,10,adaptive,0.001,1000,True,False,0.1,10.0,0.4060816082025395
+100_100,relu,lbfgs,0.0001,10,adaptive,0.001,1000,True,False,0.1,10.0,0.42287485578007583
+1000_1000,relu,lbfgs,0.01,10,adaptive,0.001,1000,False,False,0.1,10.0,0.39637956267150226
+100 1000 100 25,relu,lbfgs,0.01,10,adaptive,0.001,1000,False,False,0.1,10.0,0.4704837480667404

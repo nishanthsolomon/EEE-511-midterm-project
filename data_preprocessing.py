@@ -7,19 +7,14 @@ from sklearn.model_selection import train_test_split
 import glob
 import os
 
-data=[]
-path="./dataset/201*"
 
-for filename in glob.glob(path):
-    with open(filename) as csvfile:
-        csvdata=pd.read_csv(csvfile)
-        data.append(csvdata)
+path="./dataset/FinalData_all.csv"
 
-combined_csv=pd.concat(data,axis=0,ignore_index=True,sort=False)
-combined_csv.to_csv(os.path.splitext("./dataset/combined_data")[0]+ '_all.csv',index=False,sep=",")
+combined_csv=pd.read_csv(path)
 
-y = combined_csv['happiness_score']
-x = combined_csv[['gdp','life_expectancy','freedom','generosity','corruption']]
+y = combined_csv['Succeeded']/combined_csv['Attempted']
+
+x = combined_csv[['Temperature AVG','Relative Humidity AVG','Wind Speed Daily AVG']]
 #standardized_X = preprocessing.scale(x)
 #standardized_Y = preprocessing.scale(y)
 #normalized_X = preprocessing.normalize(x)

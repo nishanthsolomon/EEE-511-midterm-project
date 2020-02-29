@@ -1,7 +1,7 @@
 from sklearn.linear_model import LinearRegression
 
 
-class LinearRegressionHappinessScore():
+class LinearRegressionMidtermProject():
     def __init__(self):
         self.linear_regression = LinearRegression()
     
