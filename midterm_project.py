@@ -17,7 +17,6 @@ class Midterm():
         mlp_config = config['mlp']
 
         train_data = pd.read_csv(data_config['train_data_path'], delimiter = data_config['delimiter'])
-        valid_data = pd.read_csv(data_config['valid_data_path'], delimiter = data_config['delimiter'])
         test_data = pd.read_csv(data_config['test_data_path'], delimiter = data_config['delimiter'])
 
         output_label = data_config['output_label']
@@ -25,9 +24,6 @@ class Midterm():
 
         self.y_train = train_data[output_label]
         self.x_train = train_data[feature_labels]
-
-        self.y_valid = valid_data[output_label]
-        self.x_valid = valid_data[feature_labels]
 
         self.y_test = test_data[output_label]
         self.x_test = test_data[feature_labels]
