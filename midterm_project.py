@@ -62,8 +62,9 @@ if __name__ == "__main__":
     config = configparser.ConfigParser()
     config.read('./midterm_project.conf')
 
-    happiness_score = Midterm(config)
+    midterm_project = Midterm(config)
 
-    rmse_mlp = happiness_score.run_mlp()
+    linear_regression = midterm_project.linear_regression()
+    rmse_mlp = midterm_project.run_mlp()
 
     print('RMS error of mlp model = ' + str(rmse_mlp))
