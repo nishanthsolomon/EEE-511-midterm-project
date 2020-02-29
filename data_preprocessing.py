@@ -21,6 +21,7 @@ y = combined_csv['happiness_score']
 x = combined_csv[['gdp','life_expectancy','freedom','generosity','corruption']]
 
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.20, random_state=42)
+x_test, x_test_valid, y_test, y_test_valid = train_test_split(x_test, y_test, test_size=0.5, random_state=42)
 
 train = pd.concat([y_train, x_train], axis=1, sort=False)
 test = pd.concat([y_test, x_test], axis=1, sort=False)
